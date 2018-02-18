@@ -20,20 +20,19 @@ final class Main {
 		String accStr;  
 		String choice;
 		
-		if (args.length == 0) {
+		System.out.println("Enter your string of numbers: ");
+		accStr = br.readLine();
+		
+		System.out.println("Initial String: ");
+		System.out.println(accStr);
+		
+		System.out.println("Choose Algorithm: ");
+		choice = br.readLine();
+		
+	    if (accStr.length() == 0) {
 			accStr = "20";
 			choice = "1";
 			
-		}
-		else{
-			System.out.println("Enter your string of numbers: ");
-			accStr = br.readLine();
-			
-			System.out.println("Initial String: ");
-			System.out.println(accStr);
-			
-			System.out.println("Choose Algorithm: ");
-			choice = br.readLine();
 		}
 		SortDemoData data = new SortDemoData();
 		
